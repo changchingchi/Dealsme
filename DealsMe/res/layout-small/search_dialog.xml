@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/SearchDialogLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <TextView
+        android:id="@+id/YELP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:padding=" 10sp"
+        android:textColor="#000"
+        android:text="THIS APP CONSUMES ALL THE DATA FROM -YELP.\n\n THIS APP IS MADE FOR TEST/EDUCATION PURPOSE ONLY AND SUPERVISED BY -SIMBIOSYS CORP.\n\n THIS APP IS MADE BY CHANGCHINGCHI AND JASON TENG.\n\n IF THERE IS ANY COPYRIGHT ISSUE,PLEASE SEE IMMEDIATELY CONTACT US." />
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/YELP"
+        android:layout_centerHorizontal="true"
+        android:padding="3dp"
+        android:src="@drawable/powered_by_yelp_red" />
+
+</RelativeLayout>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">FOODasian</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">About FOODasian</string>
+    <string name="title_activity_gridview_adaptor">FOODasian</string>
+    <string name="title_activity_grid_view_item">FOODasian</string>
+    <string name="title_activity_search_">FOODasian</string>
+    
+    
+
+</resources>

@@ -1,0 +1,98 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="5dp"
+    tools:context="com.sim.dealsme.GridviewAdaptor"
+    tools:ignore="MergeRootFrame" >
+
+    <!--
+         <ImageView
+        android:id="@+id/picture"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:adjustViewBounds="true"
+        android:scaleType="centerCrop" />
+    -->
+
+    <com.sim.dealsme.SquareImageView
+        android:id="@+id/picture"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:scaleType="centerCrop" />
+
+    <TextView
+        android:id="@+id/grid_reviewCount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/picture"
+        android:layout_alignLeft="@+id/grid_header"
+        android:layout_alignRight="@+id/picture"
+        android:background="#55000000"
+        android:fontFamily="sans-serif-light"
+        android:gravity="center_vertical|right"
+        android:text="COUNT"
+        android:textColor="@android:color/white"
+        android:textSize="15sp" />
+
+    <ImageView
+        android:id="@+id/grid_storeRating"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/picture"
+        android:layout_alignLeft="@+id/grid_reviewCount"
+        android:layout_alignTop="@+id/grid_reviewCount"
+        android:src="@drawable/store_rating" />
+
+    <TextView
+        android:id="@+id/grid_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/picture"
+        android:layout_alignTop="@+id/picture"
+        android:layout_toLeftOf="@+id/grid_distance"
+        android:background="@drawable/textview_gredient_header"
+        android:fontFamily="sans-serif-condensed"
+        android:paddingBottom="5dp"
+        android:paddingLeft="6dp"
+        android:paddingRight="6dp"
+        android:paddingTop="5dp"
+        android:text="StoreName"
+        android:textColor="@android:color/white"
+        android:textSize="20sp" />
+
+    <!--
+         <ImageView
+        android:id="@+id/yelpLogo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/grid_reviewCount"
+        android:layout_alignRight="@+id/picture"
+        android:src="@drawable/yelp_logo_75x38" />
+    -->
+
+    <TextView
+        android:id="@+id/grid_distance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/grid_header"
+        android:layout_alignRight="@+id/picture"
+        android:layout_alignTop="@+id/picture"
+        android:background="@drawable/textview_gredient_header"
+        android:gravity="center_horizontal|center_vertical"
+        android:paddingBottom="5dp"
+        android:paddingLeft="6dp"
+        android:paddingRight="6dp"
+        android:paddingTop="5dp"
+        android:text="0.5 M"
+        android:textColor="@android:color/white"
+        android:textSize="10sp" />
+
+</RelativeLayout>

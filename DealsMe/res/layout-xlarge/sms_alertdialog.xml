@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/AlertDialogLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <EditText
+        android:id="@+id/ET_Receiver"
+        android:layout_width="244dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:ems="10"
+        android:hint="Number :"
+        android:textColor="#000" />
+
+    <EditText
+        android:id="@+id/ET_Content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/ET_Receiver"
+        android:layout_toLeftOf="@+id/buttonV"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:ems="10"
+        android:hint="SMS content :"
+        android:textColor="#000" >
+
+        <requestFocus />
+    </EditText>
+
+ <!--     <Button
+        android:id="@+id/buttonV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/ET_Content"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/ET_Content"
+        android:text="STT" />  -->
+
+    <ImageButton
+         android:id="@+id/buttonV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/ET_Content"
+        android:src="@android:drawable/ic_btn_speak_now" />
+
+</RelativeLayout>
